@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MedTracker
+
+  Created by Shakti Prakash Srichandan on 23/06/21.
+  
+*/
+
+"ok" = "OK";
+"try_again" = "Please try again after sometimes";
+"something_wrong" = "Something went wrong";
