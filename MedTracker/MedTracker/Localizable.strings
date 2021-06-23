@@ -9,3 +9,7 @@
 "ok" = "OK";
 "try_again" = "Please try again after sometimes";
 "something_wrong" = "Something went wrong";
+"morning_reminder" = "Please take your morning medicine dose";
+"afternoon_reminder" = "Please take your afternoon medicine dose";
+"night_reminder" = "Please take your night medicine dose";
+"medicine_reminder" = "Gentle reminder for your medicine!";

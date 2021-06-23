@@ -23,6 +23,8 @@
 		D61061C42683580B0011F36E /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061C32683580B0011F36E /* AlertManager.swift */; };
 		D61061CC268358ED0011F36E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D61061CB268358ED0011F36E /* Localizable.strings */; };
 		D61061D2268359630011F36E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061D1268359630011F36E /* BaseViewController.swift */; };
+		D6C78B37268376DE00390074 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C78B36268376DE00390074 /* NotificationManager.swift */; };
+		D6C78B3D26837B3700390074 /* MedicineTimings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C78B3C26837B3700390074 /* MedicineTimings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		D61061C32683580B0011F36E /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		D61061CB268358ED0011F36E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D61061D1268359630011F36E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D6C78B36268376DE00390074 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		D6C78B3C26837B3700390074 /* MedicineTimings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTimings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		D610616026833EA70011F36E /* MedTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D69554F526838B4200E16970 /* Enums */,
 				D61061A6268356030011F36E /* Common */,
 				D61061A2268354750011F36E /* AppSceneDelegates */,
 				D61061A1268354310011F36E /* StoryBoards */,
@@ -184,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				D61061D0268359440011F36E /* BaseViewController */,
-				D61061C2268357E60011F36E /* AlertManager */,
+				D61061C2268357E60011F36E /* Managers */,
 				D61061B92683570E0011F36E /* Extensions */,
 				D61061B0268356B50011F36E /* ErrorHandling */,
 				D61061AF268356A50011F36E /* Protocol */,
@@ -216,12 +221,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		D61061C2268357E60011F36E /* AlertManager */ = {
+		D61061C2268357E60011F36E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				D61061C32683580B0011F36E /* AlertManager.swift */,
+				D6C78B36268376DE00390074 /* NotificationManager.swift */,
 			);
-			path = AlertManager;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		D61061D0268359440011F36E /* BaseViewController */ = {
@@ -230,6 +236,14 @@
 				D61061D1268359630011F36E /* BaseViewController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		D69554F526838B4200E16970 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D6C78B3C26837B3700390074 /* MedicineTimings.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +378,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D610616626833EA70011F36E /* ViewController.swift in Sources */,
+				D6C78B3D26837B3700390074 /* MedicineTimings.swift in Sources */,
 				D610619A268350150011F36E /* PersistenceManager.swift in Sources */,
 				D610616C26833EA70011F36E /* MedTracker.xcdatamodeld in Sources */,
 				D61061B2268356ED0011F36E /* MEError.swift in Sources */,
+				D6C78B37268376DE00390074 /* NotificationManager.swift in Sources */,
 				D61061A82683561F0011F36E /* Protocols.swift in Sources */,
 				D61061D2268359630011F36E /* BaseViewController.swift in Sources */,
 				D610616226833EA70011F36E /* AppDelegate.swift in Sources */,
