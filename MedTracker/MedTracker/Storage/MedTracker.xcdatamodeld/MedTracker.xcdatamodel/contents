@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DosesModel" representedClassName="DosesModel" syncable="YES">
+        <attribute name="medicineTakenTime" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="dateOfTaken" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MedicineDetails" inverseName="doses" inverseEntity="MedicineDetails"/>
+    </entity>
+    <entity name="MedicineDetails" representedClassName="MedicineDetails" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="doses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DosesModel" inverseName="dateOfTaken" inverseEntity="DosesModel"/>
+    </entity>
+    <elements>
+        <element name="MedicineDetails" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="DosesModel" positionX="-45" positionY="18" width="128" height="74"/>
+    </elements>
 </model>

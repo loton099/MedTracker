@@ -23,6 +23,11 @@
 		D61061C42683580B0011F36E /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061C32683580B0011F36E /* AlertManager.swift */; };
 		D61061CC268358ED0011F36E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D61061CB268358ED0011F36E /* Localizable.strings */; };
 		D61061D2268359630011F36E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061D1268359630011F36E /* BaseViewController.swift */; };
+		D685CAF626844F29005B9EB1 /* MedicineHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CAF526844F29005B9EB1 /* MedicineHistoryViewController.swift */; };
+		D685CB0126847CCA005B9EB1 /* DosesModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CAFD26847CCA005B9EB1 /* DosesModel+CoreDataClass.swift */; };
+		D685CB0226847CCA005B9EB1 /* DosesModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CAFE26847CCA005B9EB1 /* DosesModel+CoreDataProperties.swift */; };
+		D685CB0326847CCA005B9EB1 /* MedicineDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CAFF26847CCA005B9EB1 /* MedicineDetails+CoreDataClass.swift */; };
+		D685CB0426847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CB0026847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift */; };
 		D6C78B37268376DE00390074 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C78B36268376DE00390074 /* NotificationManager.swift */; };
 		D6C78B3D26837B3700390074 /* MedicineTimings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C78B3C26837B3700390074 /* MedicineTimings.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +72,11 @@
 		D61061C32683580B0011F36E /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		D61061CB268358ED0011F36E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D61061D1268359630011F36E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D685CAF526844F29005B9EB1 /* MedicineHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistoryViewController.swift; sourceTree = "<group>"; };
+		D685CAFD26847CCA005B9EB1 /* DosesModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DosesModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D685CAFE26847CCA005B9EB1 /* DosesModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DosesModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D685CAFF26847CCA005B9EB1 /* MedicineDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MedicineDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D685CB0026847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MedicineDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D6C78B36268376DE00390074 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		D6C78B3C26837B3700390074 /* MedicineTimings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTimings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +129,7 @@
 		D610616026833EA70011F36E /* MedTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D685CAFA2684502E005B9EB1 /* ViewModels */,
 				D69554F526838B4200E16970 /* Enums */,
 				D61061A6268356030011F36E /* Common */,
 				D61061A2268354750011F36E /* AppSceneDelegates */,
@@ -153,6 +164,10 @@
 		D610619E268354030011F36E /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				D685CAFD26847CCA005B9EB1 /* DosesModel+CoreDataClass.swift */,
+				D685CAFE26847CCA005B9EB1 /* DosesModel+CoreDataProperties.swift */,
+				D685CAFF26847CCA005B9EB1 /* MedicineDetails+CoreDataClass.swift */,
+				D685CB0026847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift */,
 				D6106199268350150011F36E /* PersistenceManager.swift */,
 				D610616A26833EA70011F36E /* MedTracker.xcdatamodeld */,
 			);
@@ -163,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				D610616526833EA70011F36E /* ViewController.swift */,
+				D685CAF526844F29005B9EB1 /* MedicineHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,6 +252,13 @@
 				D61061D1268359630011F36E /* BaseViewController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		D685CAFA2684502E005B9EB1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D69554F526838B4200E16970 /* Enums */ = {
@@ -377,17 +400,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D685CB0226847CCA005B9EB1 /* DosesModel+CoreDataProperties.swift in Sources */,
 				D610616626833EA70011F36E /* ViewController.swift in Sources */,
 				D6C78B3D26837B3700390074 /* MedicineTimings.swift in Sources */,
 				D610619A268350150011F36E /* PersistenceManager.swift in Sources */,
 				D610616C26833EA70011F36E /* MedTracker.xcdatamodeld in Sources */,
 				D61061B2268356ED0011F36E /* MEError.swift in Sources */,
+				D685CB0426847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift in Sources */,
+				D685CB0326847CCA005B9EB1 /* MedicineDetails+CoreDataClass.swift in Sources */,
 				D6C78B37268376DE00390074 /* NotificationManager.swift in Sources */,
 				D61061A82683561F0011F36E /* Protocols.swift in Sources */,
+				D685CAF626844F29005B9EB1 /* MedicineHistoryViewController.swift in Sources */,
 				D61061D2268359630011F36E /* BaseViewController.swift in Sources */,
 				D610616226833EA70011F36E /* AppDelegate.swift in Sources */,
 				D61061BB2683573A0011F36E /* Strings+Additions.swift in Sources */,
 				D610616426833EA70011F36E /* SceneDelegate.swift in Sources */,
+				D685CB0126847CCA005B9EB1 /* DosesModel+CoreDataClass.swift in Sources */,
 				D61061C42683580B0011F36E /* AlertManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

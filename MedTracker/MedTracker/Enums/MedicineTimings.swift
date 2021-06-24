@@ -22,7 +22,7 @@ import UIKit
             case .night:
                 return ("night_reminder".localized , MedicineDoses.nightTime)
           }
-        }
+    }
 }
 
 enum MedicineDoses {
