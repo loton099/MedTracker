@@ -33,7 +33,7 @@ enum MedicineDoses {
     static let morningStartTime: Int = 8
     static let morningEndTime: Int = 12
     static let afternoonTime: Int = 14
-    static let afternoonEndTime: Int = 17
+    static let afternoonEndTime: Int = 19
     static let nightTime: Int = 20
     static let nightEndTime: Int = 22
 }

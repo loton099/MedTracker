@@ -19,6 +19,6 @@
 "night" = "Good Night";
 "no_medicine" = "No medicine taken";
 "med_taken" = "No pending doses";
-"med_taken_message" = "You have already taken requied doses";
+"med_taken_message" = "You have already taken required doses at the moment";
 "med_time_not_started" = "Please try at the prescribed time";
 "alert" = "Alert !";
