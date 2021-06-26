@@ -13,3 +13,12 @@
 "afternoon_reminder" = "Please take your afternoon medicine dose";
 "night_reminder" = "Please take your night medicine dose";
 "medicine_reminder" = "Gentle reminder for your medicine!";
+"morning" = "Good Morning";
+"afternoon" = "Good Afternoon";
+"evening" = "Good Evening";
+"night" = "Good Night";
+"no_medicine" = "No medicine taken";
+"med_taken" = "No pending doses";
+"med_taken_message" = "You have already taken requied doses";
+"med_time_not_started" = "Please try at the prescribed time";
+"alert" = "Alert !";

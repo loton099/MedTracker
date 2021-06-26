@@ -34,3 +34,9 @@ extension MEError: LocalizedError {
   }
 }
 
+extension MEError {
+    static func unknownError() -> MEError {
+        return MEError.alert(title: "something_wrong".localized, message: "try_again".localized, code: 0)
+    }
+    
+}

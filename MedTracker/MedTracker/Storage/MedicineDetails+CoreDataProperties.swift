@@ -39,6 +39,30 @@ extension MedicineDetails {
 
 }
 
-extension MedicineDetails : Identifiable {
-
+extension MedicineDetails : Identifiable, MedicationDislayable {
+   
+    var score: Int16 {
+        return self.dosesInfo?.reduce(0, {$0 + $1.score}) ?? 0
+    }
+    
+    var formattedDate: String? {
+        return self.date?.getFormattedDate(format: "dd/MM/yy")
+    }
+    
+    var medicationHistoryAvailable: Bool {
+        guard let doses = self.dosesInfo ,doses.count > 0 else { return false }
+        return true
+    }
+    
+    func getMedicineDosesWith(_ data: MedicineTimings) -> String {
+        guard let doses = self.dosesInfo ,doses.count > 0 else { return "" }
+        guard  let index = doses.first(where: {$0.medicineTakenTime!.hasPrefix(data.rawValue)}) else {
+          return ""
+        }
+        
+        guard let medicineTakenTime = index.medicineTakenTime, medicineTakenTime.count > 0 else { return "" }
+        let medicineTakenArrayString = medicineTakenTime.components(separatedBy: "-")
+        return medicineTakenArrayString[1]
+        
+    }
 }
