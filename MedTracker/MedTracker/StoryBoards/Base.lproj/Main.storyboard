@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR2-YF-NyW">
-                                <rect key="frame" x="20" y="762" width="374" height="60"/>
+                                <rect key="frame" x="25" y="762" width="364" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Qky-KV-25H"/>
@@ -40,6 +40,11 @@
                                 <state key="normal" title="Medicine taken">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="medicineButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9l-2T-sbc"/>
                                 </connections>
@@ -57,13 +62,13 @@
                             <constraint firstItem="L3G-zH-xPl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0nF-Wo-IgP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uwT-UC-Xzb" secondAttribute="trailing" constant="20" id="6px-9B-UAo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rR2-YF-NyW" secondAttribute="bottom" constant="40" id="AQh-2P-Dnj"/>
-                            <constraint firstItem="rR2-YF-NyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hbo-nq-A51"/>
+                            <constraint firstItem="rR2-YF-NyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Hbo-nq-A51"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xne-PP-kls" secondAttribute="trailing" constant="20" id="MtJ-e0-l08"/>
                             <constraint firstItem="L3G-zH-xPl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xne-PP-kls" secondAttribute="bottom" constant="30" id="QQd-MU-16r"/>
                             <constraint firstItem="uwT-UC-Xzb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="X6z-Jr-LdG"/>
                             <constraint firstItem="uwT-UC-Xzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="f9y-Ic-dyy"/>
                             <constraint firstItem="Xne-PP-kls" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iuv-F3-qW6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rR2-YF-NyW" secondAttribute="trailing" constant="20" id="jch-Ot-nm8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rR2-YF-NyW" secondAttribute="trailing" constant="25" id="jch-Ot-nm8"/>
                             <constraint firstItem="L3G-zH-xPl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jv6-BG-QE0"/>
                             <constraint firstItem="Xne-PP-kls" firstAttribute="top" secondItem="uwT-UC-Xzb" secondAttribute="bottom" constant="50" id="wbx-49-cn2"/>
                         </constraints>
@@ -95,20 +100,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6D2-Sc-x3N">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6D2-Sc-x3N">
+                                <rect key="frame" x="0.0" y="93" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="aLj-1Y-Pl3">
-                                    <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="100" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dMN-f4-b9U">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dMN-f4-b9U" id="M6t-Hi-79K">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -124,7 +129,7 @@
                         <constraints>
                             <constraint firstItem="6D2-Sc-x3N" firstAttribute="leading" secondItem="86b-jH-Tyo" secondAttribute="leading" id="MV7-sX-btd"/>
                             <constraint firstItem="86b-jH-Tyo" firstAttribute="bottom" secondItem="6D2-Sc-x3N" secondAttribute="bottom" id="Y3K-gU-hmP"/>
-                            <constraint firstItem="6D2-Sc-x3N" firstAttribute="top" secondItem="86b-jH-Tyo" secondAttribute="top" id="ixk-Cv-W1k"/>
+                            <constraint firstItem="6D2-Sc-x3N" firstAttribute="top" secondItem="86b-jH-Tyo" secondAttribute="top" constant="5" id="ixk-Cv-W1k"/>
                             <constraint firstItem="86b-jH-Tyo" firstAttribute="trailing" secondItem="6D2-Sc-x3N" secondAttribute="trailing" id="nXU-wh-UNv"/>
                         </constraints>
                     </view>

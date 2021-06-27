@@ -6,17 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
 struct MedicineDoseHandler {
-    
     static let shared = MedicineDoseHandler()
-    
     private init() {}
-    
     
     func getCurrentDoseDetails() -> (MedicineTimings, Int) {
         let hour = Calendar.current.component(.hour, from: Date())
-        
         switch hour {
             case MedicineDoses.morningStartTime ..< MedicineDoses.morningEndTime :
                 return (.morning , MedicineScore.morningafternoonScore)
@@ -36,6 +33,18 @@ struct MedicineDoseHandler {
                 return true
             default:
                 return false
+        }
+    }
+    
+    func getScoreColorWith(value: Int16) -> UIColor {
+        
+        switch value {
+            case 0 ... 30 :
+                return UIColor.red
+            case 30 ... 70 :
+                return UIColor.orange
+            default:
+                return UIColor.green
         }
     }
 }

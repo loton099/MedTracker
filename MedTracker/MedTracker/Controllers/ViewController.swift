@@ -41,15 +41,12 @@ class ViewController: BaseViewController {
         viewModel.requestSucceeded = {  [weak self] in
             guard let self = self else {  return }
             self.scoreLabel.text = viewModel.userScore
+            self.scoreLabel.textColor = MedicineDoseHandler.shared.getScoreColorWith(value: viewModel.userScoreValue)
         }
     }
-    
     
     @IBAction func medicineButtonDidTap(_ sender: UIButton) {
         viewModel.storerecentMedicineDetails()
     }
-    
-    
-    
 }
 

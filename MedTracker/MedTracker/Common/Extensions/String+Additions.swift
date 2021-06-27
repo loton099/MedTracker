@@ -1,5 +1,5 @@
 //
-//  Strings+Additions.swift
+//  String+Additions.swift
 //  MedTracker
 //
 //  Created by Shakti Prakash Srichandan on 23/06/21.

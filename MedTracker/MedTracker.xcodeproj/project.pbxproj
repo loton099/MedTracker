@@ -19,7 +19,7 @@
 		D610619A268350150011F36E /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6106199268350150011F36E /* PersistenceManager.swift */; };
 		D61061A82683561F0011F36E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061A72683561F0011F36E /* Protocols.swift */; };
 		D61061B2268356ED0011F36E /* MEError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061B1268356ED0011F36E /* MEError.swift */; };
-		D61061BB2683573A0011F36E /* Strings+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061BA2683573A0011F36E /* Strings+Additions.swift */; };
+		D61061BB2683573A0011F36E /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061BA2683573A0011F36E /* String+Additions.swift */; };
 		D61061C42683580B0011F36E /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061C32683580B0011F36E /* AlertManager.swift */; };
 		D61061CC268358ED0011F36E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D61061CB268358ED0011F36E /* Localizable.strings */; };
 		D61061D2268359630011F36E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61061D1268359630011F36E /* BaseViewController.swift */; };
@@ -30,17 +30,18 @@
 		D685CB0426847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CB0026847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift */; };
 		D685CB0F26848324005B9EB1 /* MedicineDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CB0E26848324005B9EB1 /* MedicineDetailsViewModel.swift */; };
 		D685CB3426849202005B9EB1 /* MedicineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CB3326849202005B9EB1 /* MedicineDataSource.swift */; };
-		D685CB3A26849CF9005B9EB1 /* Dates+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CB3926849CF9005B9EB1 /* Dates+Additions.swift */; };
+		D685CB3A26849CF9005B9EB1 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685CB3926849CF9005B9EB1 /* Date+Additions.swift */; };
 		D6B9500C2685D3BB0053C608 /* MedicationDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9500A2685D3BB0053C608 /* MedicationDetailsTableViewCell.swift */; };
 		D6B9500D2685D3BB0053C608 /* MedicationDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B9500B2685D3BB0053C608 /* MedicationDetailsTableViewCell.xib */; };
 		D6B950162685E8A20053C608 /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B950152685E8A20053C608 /* StoryboardManager.swift */; };
 		D6B9501B2685EF3F0053C608 /* UITableViewCell+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9501A2685EF3F0053C608 /* UITableViewCell+Additions.swift */; };
-		D6B950202685EF970053C608 /* UIViewControllers+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9501F2685EF970053C608 /* UIViewControllers+Additions.swift */; };
+		D6B950202685EF970053C608 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9501F2685EF970053C608 /* UIViewController+Additions.swift */; };
 		D6B950252685F1890053C608 /* MedicineHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B950242685F1890053C608 /* MedicineHistoryViewModel.swift */; };
 		D6B9502A2685F3F60053C608 /* MedicationDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B950292685F3F60053C608 /* MedicationDisplayable.swift */; };
 		D6C4F4B42686F77900D7E904 /* MedicineDoseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C4F4B32686F77900D7E904 /* MedicineDoseHandler.swift */; };
 		D6C78B37268376DE00390074 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C78B36268376DE00390074 /* NotificationManager.swift */; };
 		D6C78B3D26837B3700390074 /* MedicineTimings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C78B3C26837B3700390074 /* MedicineTimings.swift */; };
+		D6E4F55D26878A1B00DAF1B8 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4F55C26878A1B00DAF1B8 /* UIView+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +80,7 @@
 		D6106199268350150011F36E /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		D61061A72683561F0011F36E /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D61061B1268356ED0011F36E /* MEError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEError.swift; sourceTree = "<group>"; };
-		D61061BA2683573A0011F36E /* Strings+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Additions.swift"; sourceTree = "<group>"; };
+		D61061BA2683573A0011F36E /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		D61061C32683580B0011F36E /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		D61061CB268358ED0011F36E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D61061D1268359630011F36E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -90,17 +91,18 @@
 		D685CB0026847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MedicineDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D685CB0E26848324005B9EB1 /* MedicineDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetailsViewModel.swift; sourceTree = "<group>"; };
 		D685CB3326849202005B9EB1 /* MedicineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDataSource.swift; sourceTree = "<group>"; };
-		D685CB3926849CF9005B9EB1 /* Dates+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dates+Additions.swift"; sourceTree = "<group>"; };
+		D685CB3926849CF9005B9EB1 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
 		D6B9500A2685D3BB0053C608 /* MedicationDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		D6B9500B2685D3BB0053C608 /* MedicationDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicationDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		D6B950152685E8A20053C608 /* StoryboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
 		D6B9501A2685EF3F0053C608 /* UITableViewCell+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Additions.swift"; sourceTree = "<group>"; };
-		D6B9501F2685EF970053C608 /* UIViewControllers+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControllers+Additions.swift"; sourceTree = "<group>"; };
+		D6B9501F2685EF970053C608 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		D6B950242685F1890053C608 /* MedicineHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistoryViewModel.swift; sourceTree = "<group>"; };
 		D6B950292685F3F60053C608 /* MedicationDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDisplayable.swift; sourceTree = "<group>"; };
 		D6C4F4B32686F77900D7E904 /* MedicineDoseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDoseHandler.swift; sourceTree = "<group>"; };
 		D6C78B36268376DE00390074 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		D6C78B3C26837B3700390074 /* MedicineTimings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTimings.swift; sourceTree = "<group>"; };
+		D6E4F55C26878A1B00DAF1B8 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,10 +261,11 @@
 		D61061B92683570E0011F36E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D61061BA2683573A0011F36E /* Strings+Additions.swift */,
-				D685CB3926849CF9005B9EB1 /* Dates+Additions.swift */,
+				D61061BA2683573A0011F36E /* String+Additions.swift */,
+				D685CB3926849CF9005B9EB1 /* Date+Additions.swift */,
 				D6B9501A2685EF3F0053C608 /* UITableViewCell+Additions.swift */,
-				D6B9501F2685EF970053C608 /* UIViewControllers+Additions.swift */,
+				D6B9501F2685EF970053C608 /* UIViewController+Additions.swift */,
+				D6E4F55C26878A1B00DAF1B8 /* UIView+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -462,7 +465,7 @@
 				D685CB0226847CCA005B9EB1 /* DosesModel+CoreDataProperties.swift in Sources */,
 				D6C4F4B42686F77900D7E904 /* MedicineDoseHandler.swift in Sources */,
 				D6B9500C2685D3BB0053C608 /* MedicationDetailsTableViewCell.swift in Sources */,
-				D6B950202685EF970053C608 /* UIViewControllers+Additions.swift in Sources */,
+				D6B950202685EF970053C608 /* UIViewController+Additions.swift in Sources */,
 				D610616626833EA70011F36E /* ViewController.swift in Sources */,
 				D6C78B3D26837B3700390074 /* MedicineTimings.swift in Sources */,
 				D610619A268350150011F36E /* PersistenceManager.swift in Sources */,
@@ -470,16 +473,17 @@
 				D61061B2268356ED0011F36E /* MEError.swift in Sources */,
 				D685CB0426847CCA005B9EB1 /* MedicineDetails+CoreDataProperties.swift in Sources */,
 				D685CB3426849202005B9EB1 /* MedicineDataSource.swift in Sources */,
+				D6E4F55D26878A1B00DAF1B8 /* UIView+Additions.swift in Sources */,
 				D685CB0326847CCA005B9EB1 /* MedicineDetails+CoreDataClass.swift in Sources */,
 				D6C78B37268376DE00390074 /* NotificationManager.swift in Sources */,
 				D61061A82683561F0011F36E /* Protocols.swift in Sources */,
-				D685CB3A26849CF9005B9EB1 /* Dates+Additions.swift in Sources */,
+				D685CB3A26849CF9005B9EB1 /* Date+Additions.swift in Sources */,
 				D685CAF626844F29005B9EB1 /* MedicineHistoryViewController.swift in Sources */,
 				D6B950162685E8A20053C608 /* StoryboardManager.swift in Sources */,
 				D61061D2268359630011F36E /* BaseViewController.swift in Sources */,
 				D610616226833EA70011F36E /* AppDelegate.swift in Sources */,
 				D6B9502A2685F3F60053C608 /* MedicationDisplayable.swift in Sources */,
-				D61061BB2683573A0011F36E /* Strings+Additions.swift in Sources */,
+				D61061BB2683573A0011F36E /* String+Additions.swift in Sources */,
 				D610616426833EA70011F36E /* SceneDelegate.swift in Sources */,
 				D685CB0126847CCA005B9EB1 /* DosesModel+CoreDataClass.swift in Sources */,
 				D61061C42683580B0011F36E /* AlertManager.swift in Sources */,

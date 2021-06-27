@@ -19,8 +19,12 @@ class MedicineDetailsViewModel: BaseViewModel {
         return Date().currentTimeGreetingMessage
     }
     
+    var userScoreValue: Int16 {
+        return todaysMedicationDetails?.score ?? 0
+    }
+    
     var userScore: String {
-        return "\(todaysMedicationDetails?.score ?? 0)"
+        return "\(userScoreValue)"
     }
     init(dataSource: MedicineFetchable = MedicineDataSource()) {
         self.dataSource = dataSource

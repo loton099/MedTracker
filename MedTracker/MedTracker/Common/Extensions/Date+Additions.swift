@@ -1,5 +1,5 @@
 //
-//  Dates+Additions.swift
+//  Date+Additions.swift
 //  MedTracker
 //
 //  Created by Shakti Prakash Srichandan on 24/06/21.
@@ -27,7 +27,7 @@ extension Date {
             return "morning".localized
         case 12 ..< 17 :
             return "afternoon".localized
-        case 17 ..< 22 :
+        case 17 ..< 20 :
             return "evening".localized
         default:
             return "night".localized

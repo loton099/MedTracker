@@ -35,6 +35,7 @@ class MedicationDetailsTableViewCell: UITableViewCell {
     func configureData(_ data: MedicationDislayable) {
         self.dateLabel.text = data.formattedDate ?? ""
         self.scoreLabel.text = "\(data.score )"
+        self.scoreLabel.textColor = MedicineDoseHandler.shared.getScoreColorWith(value: data.score)
         self.medicationInfoContainerView.isHidden = data.medicationHistoryAvailable ? false : true
         self.infoLabel.text = "no_medicine".localized
         self.infoLabel.isHidden = data.medicationHistoryAvailable ? true : false
